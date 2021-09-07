@@ -1,5 +1,61 @@
 /* Do tohoto souboru piš vlastní styly */
 
 :root {
-	
+	--hlavni-barva: #dd614a;
+	--doplnkova-barva: #73a580;
+
+	--vnitrni-vypln-tlacitek: 0.5em;
+
+	--barva-textu: #ffffff;
+	--barva-pozadi: #15202b;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--vnitrni-vypln-tlacitek: 1em;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--barva-textu: #15202b;
+		--barva-pozadi: #ffffff;
+	}
+}
+
+body {
+	color: var(--barva-textu);
+	background-color: var(--barva-pozadi);
+}
+
+h1 {
+	color: var(--hlavni-barva);
+}
+
+a {
+	color: var(--doplnkova-barva);
+}
+
+a:hover,
+a:focus {
+	color: var(--hlavni-barva);
+}
+
+.tlacitko {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: inherit;
+	padding: var(--vnitrni-vypln-tlacitek);
+	background-color: var(--hlavni-barva);
+	border: none;
+	border-radius: var(--vnitrni-vypln-tlacitek);
+	cursor: pointer;
+}
+.tlacitko:hover,
+.tlacitko:focus {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.tlacitko--doplnkove {
+	background-color: var(--doplnkova-barva);
 }
