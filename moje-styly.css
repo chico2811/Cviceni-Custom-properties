@@ -1,5 +1,49 @@
 /* Do tohoto souboru piš vlastní styly */
 
 :root {
+    --hlavni-barva: #dd614a;
+    --doplnkova-barva: #73a580;
+    --vnitrni-vypln-tlacitek: 0.5em;
 	
 }
+
+h1{
+    color: var(--hlavni-barva);
+}
+
+a{
+    color: var(--doplnkova-barva);
+}
+
+a:hover{
+    color: var(--hlavni-barva);
+}
+
+.tlacitko{
+    background-color: var(--hlavni-barva);
+    padding: var(--vnitrni-vypln-tlacitek);
+    border-radius: var(--vnitrni-vypln-tlacitek);
+    border: none;
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.tlacitko.tlacitko--doplnkove{
+    background-color: var(--doplnkova-barva);
+    padding: var(--vnitrni-vypln-tlacitek);
+    border-radius: var(--vnitrni-vypln-tlacitek);
+    border: none;
+    color: white;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.tlacitko:hover{
+    text-decoration: underline;
+}
+
+.tlacitko.tlacitko--doplnkove:hover{
+    text-decoration: underline;
+}
+
