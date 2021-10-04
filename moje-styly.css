@@ -4,7 +4,22 @@
     --hlavni-barva: #dd614a;
     --doplnkova-barva: #73a580;
     --vnitrni-vypln-tlacitek: 0.5em;
+    --barva-pozadi: #15202b;
+    --barva-textu: #ffffff;
+
 	
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+        --barva-pozadi: #ffffff;
+        --barva-textu: #15202b;
+    }
+}
+
+body{
+    background-color: var(--barva-pozadi);
+    color: var(--barva-textu);
 }
 
 h1{
